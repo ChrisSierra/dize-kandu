@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=“UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="pop-up-stylesheet.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Practice</title>
+  </head>
+  <body>
+   <div>     
+      <div id="pop-up-window">
+        <div id="close-btn">
+          <i class="fa fa-times fa-1x"></i>
+        </div>
+        <div id="pop-up-content">
+          <img src="http://d1c.f52.myftpupload.com/wp-content/uploads/2015/08/10528874_l-e1418130074707.jpg">
+        </div>
+        <div id="discover-more-btn">
+          <a href="" class="pop-up-btn" id="discover-more">DISCOVER MORE</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+    
+    $(document).ready(function(){        
+      $("#close-btn").on("click", function(){
+        $("#pop-up-window").css("display", "none");
+      });
+    });
+    
+  </script>
+</html>
